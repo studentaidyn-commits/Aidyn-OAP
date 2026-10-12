@@ -57,4 +57,4 @@ def course(currency, change):
  return None
 def comisia(soma, course,comisiaa):
  return (soma*course)-(soma*course)*comisiaa
-print(comisia(100,453.93 ,0.05))
+print(comisia(100,453.93 ,0.05))#43123.35
