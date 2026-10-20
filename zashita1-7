@@ -1,0 +1,112 @@
+#lab 1 12 nuska
+courses = [
+    {
+        "Курс атауы": "po101",
+        "Оқытушы": "Айгүл",
+        "Басталу күні": "01.11.2026",
+        "Ұзақтығы": "2 кредит",
+        "Кабинет": "101"
+    },
+    {
+        "Курс атауы": "po102",
+        "Оқытушы": "Ерлан",
+        "Басталу күні": "05.11.2026",
+        "Ұзақтығы": "3 кредит",
+        "Кабинет": "202"
+    },
+    {
+        "Курс атауы": "po103",
+        "Оқытушы": "Марат",
+        "Басталу күні": "10.11.2026",
+        "Ұзақтығы": "4 кредит",
+        "Кабинет": "303"
+    }
+]
+course_name = input("Қандай курс туралы ақпарат керек?(po101,po102,po103) ")
+found = False
+for course in courses:
+    if course["Курс атауы"].lower() == course_name.lower():
+        print("Курс кестесі")
+        for key, value in course.items():
+            print(key,":", value)
+        found = True
+        break
+if not found:
+    print("Мұндай курс табылмады!")
+
+
+
+  
+  #lab 2
+  age = int(input("Жасың: "))
+if age < 2:
+    print("0-90 cm")
+elif age <= 5:
+    print("90-110 cm")
+elif age <= 8:
+    print("110-130 cm")
+elif age <= 12:
+    print("130-155 cm")
+elif age <= 15:
+    print("150-175 cm")
+elif age <= 18:
+    print("155-180 cm")
+else:
+    print("160-180 cm")
+
+
+
+      
+      
+      #lab 6
+  print("=== GPA ЕСЕПТЕГІШІ ===")
+
+subjects = int(input("Пәндер саны қанша? "))
+
+total_points = 0
+total_credits = 0
+
+for i in range(subjects):
+    print(f"\n{i + 1}-пән")
+
+    name = input("Пәннің атауын енгіз: ")
+    grade = float(input("Бағаны енгіз (0-100): "))
+    credits = float(input("Кредит санын енгіз: "))
+
+    if grade < 0 or grade > 100 or credits <= 0:
+        print("Қате! Баға 0-100 аралығында, ал кредит 0-ден үлкен болуы керек.")
+        continue
+
+    gpa_grade = (grade / 100) * 4
+
+    total_points += gpa_grade * credits
+    total_credits += credits
+if total_credits > 0:
+    gpa = total_points / total_credits
+    print("Сенің GPA көрсеткішің:", round(gpa, 2), "/ 4.00")
+else:
+    print("GPA есептеу мүмкін емес.")
+
+
+      #lab 7
+      passed = []
+failed = []
+
+n = int(input("Студенттер саны қанша? "))
+
+for i in range(n):
+    name = input("Студенттің атын енгіз: ")
+    score = int(input("Студенттің балын енгіз: "))
+
+    if score >= 50:
+        passed.append({"Аты": name, "Балы": score})
+    else:
+        failed.append({"Аты": name, "Балы": score})
+
+print("ӨТКЕН СТУДЕНТТЕР")
+for student in passed:
+    print(student["Аты"], "-", student["Балы"], "балл")
+
+print("ӨТПЕГЕН СТУДЕНТТЕР")
+for student in failed:
+    print(student["Аты"], "-", student["Балы"], "балл")
