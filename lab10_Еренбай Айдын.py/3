@@ -1,3 +1,4 @@
+#Берілген сөзді жаңа сөзге алмастырып, нәтижені көрсету.
 text = "Python isnt the best language"
 old_word = "isnt"
 new_word = "is"
