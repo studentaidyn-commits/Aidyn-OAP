@@ -1,3 +1,4 @@
+# Берілген кодтың XX-999 үлгісіне сәйкестігін тексеру (X — латын бас әрпі, 9 — цифр).
 value = input("Код (AB-123): ").strip()
 valid = (len(value) == 6 and value[:2].isalpha()
          and value[:2].isupper() and value[2] == "-"
