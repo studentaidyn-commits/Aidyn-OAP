@@ -1,0 +1,7 @@
+text = "Python isnt the best language"
+total_chars = len(text)
+word_count = len(text.split())
+chars_without_spaces = len(text.replace(" ", ""))
+print("Мәтіннің жалпы ұзындығы:", total_chars)
+print("Сөз саны:", word_count)
+print("Бос орынсыз таңбалар саны:", chars_without_spaces)

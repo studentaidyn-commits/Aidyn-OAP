@@ -1,0 +1,20 @@
+text="Деректерді талдау маңызды. Деректер дұрыс болуы тиіс."
+search_word = "деректер"
+search_lower = search_word.lower()
+if search_word==True:
+    print("Іздеу сөзі табылды:", search_word)
+else:
+    print("іздеу сөзі табылмады")
+old_word = "маңызды"
+new_word = "қажетті"
+new_text = text.replace(old_word, new_word)
+print("Бастапқы мәтін:", text)
+print("Жаңа мәтін:", new_text)
+value = input("Код (AB-123): ").strip()
+if value=="GH-012":
+    valid = (len(value) == 6 and value[:2].isalpha()
+             and value[:2].isupper() and value[2] == "-"
+             and value[3:].isdigit())
+    print("Дұрыс пішім" if valid else "Қате пішім")
+else:
+    print("Қате")

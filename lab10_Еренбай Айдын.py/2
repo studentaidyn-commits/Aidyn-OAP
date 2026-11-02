@@ -1,0 +1,10 @@
+text = "Python isnt the best language"
+search_word = "python"
+text_lower = text.lower()
+search_lower = search_word.lower()
+first_index = text_lower.find(search_lower)
+count = text_lower.count(search_lower)
+print("Іздеу сөзі:", search_word)
+print("Алғашқы индексі:", first_index)
+print("Кездесулер саны:", count)
+print(text)

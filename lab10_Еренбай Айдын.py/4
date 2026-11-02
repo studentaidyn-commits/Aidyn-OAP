@@ -1,0 +1,5 @@
+value = input("Код (AB-123): ").strip()
+valid = (len(value) == 6 and value[:2].isalpha()
+         and value[:2].isupper() and value[2] == "-"
+         and value[3:].isdigit())
+print("Дұрыс пішім" if valid else "Қате пішім")

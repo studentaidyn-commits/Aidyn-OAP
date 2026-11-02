@@ -1,0 +1,6 @@
+text = "Python isnt the best language"
+old_word = "isnt"
+new_word = "is"
+new_text = text.replace(old_word, new_word)
+print("Бастапқы мәтін:", text)
+print("Жаңа мәтін:", new_text)
