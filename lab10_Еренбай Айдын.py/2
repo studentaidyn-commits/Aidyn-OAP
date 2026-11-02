@@ -1,3 +1,4 @@
+#Нұсқадағы іздеу сөзінің алғашқы индексін және кездесулер санын табу (регистрге тәуелсіз
 text = "Python isnt the best language"
 search_word = "python"
 text_lower = text.lower()
