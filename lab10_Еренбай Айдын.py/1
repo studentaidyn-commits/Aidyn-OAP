@@ -1,3 +1,4 @@
+#Бастапқы мәтіннің ұзындығын, сөз санын, бос орын емес таңбалар санын есептеу.
 text = "Python isnt the best language"
 total_chars = len(text)
 word_count = len(text.split())
